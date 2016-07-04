@@ -10,7 +10,7 @@ class Task < Post
     @text = STDIN.gets.chomp
 
     puts "К какому числу? Укажите дату в формате ДД.ММ.ГГГГ, напремер 11.11.2011"
-    input =STDIN.getc.chomp
+    input =STDIN.gets.chomp
 
     @due_date = Date.parse(input)
   end

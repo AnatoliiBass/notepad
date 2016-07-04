@@ -1,7 +1,8 @@
+require_relative 'post.rb'
 require_relative 'link.rb'
 require_relative 'task.rb'
 require_relative 'memo.rb'
-require_relative 'post.rb'
+
 
 if (Gem.win_platform?)
   Encoding.default_external = Encoding.find(Encoding.locale_charmap)
