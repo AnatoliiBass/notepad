@@ -20,11 +20,11 @@ class Tweet < Post
     return @text.unshift(time_string)
   end
 
- # def to_db_hash
- #   return super.merge( {
-  #                         'text' => @text.join('\n\r')
-  #                     } )
- # end
+ def to_db_hash
+   return super.merge( {
+    'text' => @text
+                      } )
+ end
 
   def load_data(data_hash)
     super(data_hash)
